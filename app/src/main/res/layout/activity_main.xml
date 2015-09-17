@@ -1,0 +1,58 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#F500"/>-->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.view.PagerTabStrip
+                android:id="@+id/pager_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp" />
+
+        </android.support.v4.view.ViewPager>
+
+        <FrameLayout
+            android:id="@+id/fragment_place"
+            android:name="/Users/jeansmits/AndroidStudioProjects/Fragments/app/src/main/java/vdab/be/fragments/FragOne.java"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp">
+
+        </FrameLayout>
+    </LinearLayout>
+
+        <ListView android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:background="#427E00" />
+
+
+</android.support.v4.widget.DrawerLayout>
