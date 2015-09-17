@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addDrawerItems() {
-        String[] osArray = { "Hey", "I", "FAIL", "at", "coding" };
+        String[] osArray = { "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" };
         mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, osArray);
         mDrawerList.setAdapter(mAdapter);
     }
